@@ -1,2 +1,1 @@
-# SyncFileUI
-Front end for project SyncFile as sub-module.
+This project is initialized by Angular-seed(https://github.com/angular/angular-seed).
