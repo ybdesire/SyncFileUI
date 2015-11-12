@@ -1,4 +1,25 @@
 .page_header{
 	background-color: #3a5795;
-	height:50px;
+	height: 50px;
+}
+
+.logo{
+	color: #ffffff;
+	margin: 5px 10px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 200%;
+}
+
+.content_titlecontent{
+	margin: 5px 0px
+}
+
+.content_title{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 150%;
+	text-align: center;
+}
+
+.content_tiele_intro{
+	text-align: center;
 }
