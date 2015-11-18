@@ -9,10 +9,9 @@ angular.module('myApp.intro', ['ngRoute'])
   });
 }])
 
-.controller('introCtrl', function($scope) {
+.controller('introCtrl', function($scope, $location) {
     $scope.count = 1;
     $scope.sign_in = function(){
-	console.log('sign in');
-	$scope.count++;
+	$location.path('/view2');
     };
 });
