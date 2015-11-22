@@ -4,7 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.intro',
-  'myApp.view2',
+  'myApp.login',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
