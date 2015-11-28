@@ -12,6 +12,6 @@ angular.module('myApp.intro', ['ngRoute'])
 .controller('introCtrl', function($scope, $location) {
     $scope.count = 1;
     $scope.sign_in = function(){
-		$location.path('/login');
+		$location.path('/signin');
     };
 });
