@@ -9,6 +9,9 @@ angular.module('myApp.signin', ['ngRoute'])
   });
 }])
 
-.controller('signinCtrl', [function() {
+.controller('signinCtrl', [function($scope) {
+	$scope.sign_in_btn = function(){
+		console.log('asdf');
+    };
 
 }]);

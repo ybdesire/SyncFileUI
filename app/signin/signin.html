@@ -14,8 +14,22 @@
 					<div id="signin_password_input">
 						<input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
 					</div>
+					<div id="keep_signin_checkbox">
+						<label>
+							<input type="checkbox">
+							Keep me signed in
+						</label>
+					</div>
 					<div id="signin_btn">
-						<button type="button" class="btn btn-success">Sign In</button>
+						<button type="button" class="btn btn-success" ng-click="sign_in_btn()" >Sign In</button>
+					</div>
+					<div id="signin_forgot_password">
+						<a href="#intro">Forgot password</a>
+					</div>					
+					<div class="signin_blank">
+					</div>
+					<div class="signin_bottom">
+						<span>Don't have a SyncFile account? </span><a href="#intro">Sign up now</a>
 					</div>
 				</form>
 			</div>
