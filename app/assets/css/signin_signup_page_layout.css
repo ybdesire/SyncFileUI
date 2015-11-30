@@ -1,12 +1,17 @@
-.signin_blank, #signin_title, #signin_error_msg, #signin_username_input, #signin_password_input, #keep_signin_checkbox{
+.signin_blank, .signin_blank, .signin_bottom, .signin_forgot_password, .signin_title, .signin_username_input, .signin_password_input, .keep_signin_checkbox{
 	margin: 5px;
 }
 
-#signin_btn{
+.signin_error_msg{
+	margin: 5px;
+	color: red;
+}
+
+.signin_btn{
 	margin: 20px 5px;
 }
 
 
 .signin_blank{
-	height: 200px;
+	height: 150px;
 }
