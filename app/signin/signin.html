@@ -11,10 +11,10 @@
 						{{error_msg}}
 					</div>
 					<div class="signin_username_input">
-						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" ng-model="username">
+						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" ng-model="username" ng-minlength=4 ng-maxlength=50 />
 					</div>
 					<div class="signin_password_input">
-						<input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" ng-model="password">
+						<input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" ng-model="password" ng-minlength=4 ng-maxlength=50 />
 					</div>
 					<div class="keep_signin_checkbox">
 						<label>
