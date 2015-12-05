@@ -8,7 +8,8 @@
 						<h3>Please sign in</h3>
 					</div>
 					<div class="signin_error_msg">
-						{{error_msg}}
+						<div>{{error_msg_username}}</div>
+						<div>{{error_msg_password}}</div>
 					</div>
 					<div class="signin_username_input">
 						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" ng-model="username" ng-minlength=4 ng-maxlength=50 />
