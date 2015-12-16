@@ -9,7 +9,7 @@ angular.module('myApp.signin', ['ngRoute'])
   });
 }])
 
-.controller('signinCtrl', function($scope) {
+.controller('signinCtrl', ['$scope', 'const_api_v1_base_url',  function($scope, const_api_v1_base_url) {
 	$scope.sign_in_btn = function(){
 		console.log($scope.username + ', ' + $scope.password);
 		//username cannot contain the following characters: \/:*?"<>
@@ -57,4 +57,4 @@ angular.module('myApp.signin', ['ngRoute'])
 	$scope.password = '';
 	$scope.error_msg_username = '';
 	$scope.error_msg_password = '';
-});
+}]);
