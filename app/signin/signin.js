@@ -9,7 +9,7 @@ angular.module('myApp.signin', ['ngRoute'])
   });
 }])
 
-.controller('signinCtrl', ['$scope', 'const_api_v1_base_url',  function($scope, const_api_v1_base_url) {
+.controller('signinCtrl', ['$scope', '$http', 'const_api_v1_base_url',  function($scope, $http, const_api_v1_base_url) {
 	$scope.sign_in_btn = function(){
 		console.log($scope.username + ', ' + $scope.password);
 		//username cannot contain the following characters: \/:*?"<>
@@ -49,7 +49,22 @@ angular.module('myApp.signin', ['ngRoute'])
 		}
 		else
 		{
-			$scope.error_msg_password = '';
+			var api_auth_url = const_api_v1_base_url + 'getAuthID?fmt=json&username=' + $scope.username + '&password=' + $scope.password;
+			
+			$http({
+				method: 'GET',
+				url: api_auth_url
+			}).then(function successCallback(response) {
+				console.log(response);
+				if(response.data.error_code===1011){
+					$scope.error_msg_username = response.data.msg;
+				}
+				else if(response.data.error_code===1010){//auth passed
+					$scope.error_msg_username = 'auth passed';
+				}
+			}, function errorCallback(response) {
+				$scope.error_msg_username = 'HTTP GET for API getAuthID failure';
+			});
 		}
 
     };
